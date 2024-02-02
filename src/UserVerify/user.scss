@@ -1,0 +1,57 @@
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.user-container {
+  width: 50vw;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px 15px;
+  p,
+  h1,
+  .paragraph {
+    margin: 15px 0;
+    text-align: center;
+  }
+  .inputs {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .otpField {
+      text-align: center;
+      width: 70px;
+      padding: 7px 10px;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      font-size: 70px;
+      font-weight: bold;
+ 
+      &:valid {
+        border-color: #3498db;
+        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+      }
+
+      &::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+
+  .paragraph {
+    margin: 10px auto;
+    padding: 6px 7px;
+    width: fit-content;
+    background-color: grey;
+    color: #fff;
+    border-radius: 10px;
+  }
+}
